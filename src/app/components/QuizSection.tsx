@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 export default function QuizSection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const redirectFuncition = () => {
+    window.open("https://form.respondi.app/7FCPEc5z", "_blank");
+    }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,6 +53,7 @@ export default function QuizSection() {
         <motion.button
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          onClick={redirectFuncition}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="bg-black text-[#FFD700] px-8 py-4 rounded-lg font-semibold hover:bg-black/90 transition-all duration-300 hover:scale-105"
         >
