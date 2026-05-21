@@ -5,7 +5,7 @@ export default function FinalCTASection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const redirectWhatsapp = () => {
-    window.open("https://wa.me/557399008005?text=OI%C3%A1!%20Gostaia%20de%20fazer%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20na%20minha%20empresa")
+    window.open("https://wa.me/557399008055?text=OI%C3%A1!%20Gostaia%20de%20fazer%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20na%20minha%20empresa")
   }
 
   useEffect(() => {
